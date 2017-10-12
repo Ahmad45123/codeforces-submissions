@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31256000": {
+    "contest_id": 263,
+    "language": "MS C#",
+    "path": "codeforces/263/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Beautiful Matrix",
+    "problem_url": "https://codeforces.com/contest/263/problem/A",
+    "submission_id": "CF31256000",
+    "submission_url": "https://codeforces.com/contest/263/submission/31256000",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Oct/12/2017 19:03"
+  },
   "CF31256271": {
     "contest_id": 32,
     "language": "MS C#",
