@@ -28,6 +28,7 @@ namespace ConsoleApp4
                 if (done)
                 {
                     Console.WriteLine(sin);
+                    Console.ReadLine();
                     break;
                 }
             }

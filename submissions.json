@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31256407": {
+    "contest_id": 271,
+    "language": "MS C#",
+    "path": "codeforces/271/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Beautiful Year",
+    "problem_url": "https://codeforces.com/contest/271/problem/A",
+    "submission_id": "CF31256407",
+    "submission_url": "https://codeforces.com/contest/271/submission/31256407",
+    "tags": [
+      "brute force",
+      "*800"
+    ],
+    "timestamp": "Oct/12/2017 19:21"
+  },
   "CF31256427": {
     "contest_id": 271,
     "language": "MS C#",
