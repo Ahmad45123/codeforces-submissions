@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31256271": {
+    "contest_id": 32,
+    "language": "MS C#",
+    "path": "codeforces/32/B.cs",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Borze",
+    "problem_url": "https://codeforces.com/contest/32/problem/B",
+    "submission_id": "CF31256271",
+    "submission_url": "https://codeforces.com/contest/32/submission/31256271",
+    "tags": [
+      "expression parsing",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Oct/12/2017 19:14"
+  },
   "CF31256407": {
     "contest_id": 271,
     "language": "MS C#",
