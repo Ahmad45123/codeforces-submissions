@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31278400": {
+    "contest_id": 110,
+    "language": "MS C#",
+    "path": "codeforces/110/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Nearly Lucky Number",
+    "problem_url": "https://codeforces.com/contest/110/problem/A",
+    "submission_id": "CF31278400",
+    "submission_url": "https://codeforces.com/contest/110/submission/31278400",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Oct/13/2017 17:18"
+  },
   "CF31286020": {
     "contest_id": 266,
     "language": "MS C#",
