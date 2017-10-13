@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31286020": {
+    "contest_id": 266,
+    "language": "MS C#",
+    "path": "codeforces/266/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Stones on the Table",
+    "problem_url": "https://codeforces.com/contest/266/problem/A",
+    "submission_id": "CF31286020",
+    "submission_url": "https://codeforces.com/contest/266/submission/31286020",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Oct/14/2017 01:12"
+  },
   "CF31286053": {
     "contest_id": 80,
     "language": "MS C#",
