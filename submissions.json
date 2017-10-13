@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31286053": {
+    "contest_id": 80,
+    "language": "MS C#",
+    "path": "codeforces/80/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Panoramix's Prediction",
+    "problem_url": "https://codeforces.com/contest/80/problem/A",
+    "submission_id": "CF31286053",
+    "submission_url": "https://codeforces.com/contest/80/submission/31286053",
+    "tags": [
+      "brute force",
+      "*800"
+    ],
+    "timestamp": "Oct/14/2017 01:17"
+  },
   "CF31286150": {
     "contest_id": 61,
     "language": "MS C#",
