@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31286150": {
+    "contest_id": 61,
+    "language": "MS C#",
+    "path": "codeforces/61/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Ultra-Fast Mathematician",
+    "problem_url": "https://codeforces.com/contest/61/problem/A",
+    "submission_id": "CF31286150",
+    "submission_url": "https://codeforces.com/contest/61/submission/31286150",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Oct/14/2017 01:30"
+  },
   "CF31318582": {
     "contest_id": 233,
     "language": "MS C#",
