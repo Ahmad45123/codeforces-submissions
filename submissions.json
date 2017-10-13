@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31278237": {
+    "contest_id": 59,
+    "language": "MS C#",
+    "path": "codeforces/59/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Word",
+    "problem_url": "https://codeforces.com/contest/59/problem/A",
+    "submission_id": "CF31278237",
+    "submission_url": "https://codeforces.com/contest/59/submission/31278237",
+    "tags": [
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Oct/13/2017 17:11"
+  },
   "CF31278308": {
     "contest_id": 281,
     "language": "MS C#",
