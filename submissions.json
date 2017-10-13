@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31278308": {
+    "contest_id": 281,
+    "language": "MS C#",
+    "path": "codeforces/281/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Word Capitalization",
+    "problem_url": "https://codeforces.com/contest/281/problem/A",
+    "submission_id": "CF31278308",
+    "submission_url": "https://codeforces.com/contest/281/submission/31278308",
+    "tags": [
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Oct/13/2017 17:13"
+  },
   "CF31278400": {
     "contest_id": 110,
     "language": "MS C#",
