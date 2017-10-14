@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31321218": {
+    "contest_id": 282,
+    "language": "MS C#",
+    "path": "codeforces/282/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Bit++",
+    "problem_url": "https://codeforces.com/contest/282/problem/A",
+    "submission_id": "CF31321218",
+    "submission_url": "https://codeforces.com/contest/282/submission/31321218",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Oct/14/2017 20:44"
+  },
   "CF31431285": {
     "contest_id": 227,
     "language": "MS C#",
