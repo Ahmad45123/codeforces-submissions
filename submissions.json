@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31320793": {
+    "contest_id": 144,
+    "language": "MS C#",
+    "path": "codeforces/144/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Arrival of the General",
+    "problem_url": "https://codeforces.com/contest/144/problem/A",
+    "submission_id": "CF31320793",
+    "submission_url": "https://codeforces.com/contest/144/submission/31320793",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Oct/14/2017 20:25"
+  },
   "CF31321218": {
     "contest_id": 282,
     "language": "MS C#",
