@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31431285": {
+    "contest_id": 227,
+    "language": "MS C#",
+    "path": "codeforces/227/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Where do I Turn?",
+    "problem_url": "https://codeforces.com/contest/227/problem/A",
+    "submission_id": "CF31431285",
+    "submission_url": "https://codeforces.com/contest/227/submission/31431285",
+    "tags": [
+      "geometry",
+      "*1300"
+    ],
+    "timestamp": "Oct/16/2017 21:19"
+  },
   "CF31431992": {
     "contest_id": 272,
     "language": "MS C#",
