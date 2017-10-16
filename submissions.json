@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31431992": {
+    "contest_id": 272,
+    "language": "MS C#",
+    "path": "codeforces/272/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Dima and Friends",
+    "problem_url": "https://codeforces.com/contest/272/problem/A",
+    "submission_id": "CF31431992",
+    "submission_url": "https://codeforces.com/contest/272/submission/31431992",
+    "tags": [
+      "implementation",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Oct/16/2017 21:53"
+  },
   "CF31432235": {
     "contest_id": 450,
     "language": "MS C#",
