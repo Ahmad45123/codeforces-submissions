@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31433455": {
+    "contest_id": 205,
+    "language": "MS C#",
+    "path": "codeforces/205/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Little Elephant and Rozdil",
+    "problem_url": "https://codeforces.com/contest/205/problem/A",
+    "submission_id": "CF31433455",
+    "submission_url": "https://codeforces.com/contest/205/submission/31433455",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Oct/16/2017 23:29"
+  },
   "CF31434054": {
     "contest_id": 445,
     "language": "MS C#",
