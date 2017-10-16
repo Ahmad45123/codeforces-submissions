@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF31434054": {
+    "contest_id": 445,
+    "language": "MS C#",
+    "path": "codeforces/445/A.cs",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "DZY Loves Chessboard",
+    "problem_url": "https://codeforces.com/contest/445/problem/A",
+    "submission_id": "CF31434054",
+    "submission_url": "https://codeforces.com/contest/445/submission/31434054",
+    "tags": [
+      "dfs and similar",
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Oct/17/2017 00:26"
+  },
   "CF35695670": {
     "contest_id": 937,
     "language": "GNU C++11",
