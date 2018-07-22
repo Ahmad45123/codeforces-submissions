@@ -1,35 +1,32 @@
 #include <bits/stdc++.h>
+
 using namespace std;
-typedef long long ll;
+#define mp make_pair
+typedef long long int ll;
 
 int main()
 {
-    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-    
     int n, k; cin >> n >> k;
-    vector<int> arr(n);
-    
-    int curSum = 0;
-    int minSum = 0;
-    int pos = 0;
-
-    for(int i = 0; i < n; i++) {
+    vector<int> arr(n+1);
+    for(int i = 1; i <= n; i++)
         cin >> arr[i];
-        if(i < k)
-            curSum += arr[i];
-    }
-    minSum = curSum;
 
-    for(int i = k; i < n; i++) {
+    int curSum = 0;
+    int smallSum = INT_MAX;
+    int ans = 1;
+
+    for(int i = 1; i <= k; i++)
         curSum += arr[i];
+    smallSum = curSum;
+    for(int i = k+1; i <= n; i++) {
         curSum -= arr[i-k];
-        if(curSum < minSum) {
-            minSum = curSum;
-            pos = i-k+1;
+        curSum += arr[i];
+        if(curSum < smallSum) {
+            smallSum = curSum;
+            ans = i-k+1;
         }
     }
-    
-    cout << pos+1 << "\n";
 
+    cout << ans;
     return 0;
 }
