@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF40745335": {
+    "contest_id": 474,
+    "language": "GNU C++17",
+    "path": "codeforces/474/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Flowers",
+    "problem_url": "https://codeforces.com/contest/474/problem/D",
+    "submission_id": "CF40745335",
+    "submission_url": "https://codeforces.com/contest/474/submission/40745335",
+    "tags": [
+      "dp",
+      "*1700"
+    ],
+    "timestamp": "Jul/25/2018 16:22"
+  },
   "CF40780672": {
     "contest_id": 998,
     "language": "GNU C++17",
