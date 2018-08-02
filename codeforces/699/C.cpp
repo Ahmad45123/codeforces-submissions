@@ -1,45 +1,57 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
+
 using namespace std;
-typedef long long ll;
+#define mp make_pair
+typedef long long int ll;
 
 int n;
-vector<int> arr(n);
+vector<int> arr;
 
-/*
- last = 0 -> did nothing
- last = 1 -> went gym
- last = 2 -> wrote contest
-*/
+int dp[101][3];
 
-int mem[101][3];
-
-int solve(int i, int last) {
-    if(i == n)
+//curr => 0, 1
+int solve(int i, int curr) {
+    if(i >= n)
         return 0;
 
-    if(mem[i][last] != -1)
-        return mem[i][last];
+    int &ret = dp[i][curr];
+    if(~ret)
+        return ret;
     
-    int ans = solve(i+1, 0);
-    if((arr[i] == 1 || arr[i] == 3) && last != 2) {
-        ans = max(ans, 1+solve(i+1, 2));
+    if(arr[i] == 3) {
+        ret = 1+solve(i+1, 0);
+        if(curr != 2)
+            ret = min(ret, solve(i+1, 2));
+        if(curr != 1)
+            ret = min(ret, solve(i+1, 1));
     }
-    if((arr[i] == 2 || arr[i] == 3) && last != 1) {
-        ans = max(ans, 1+solve(i+1, 1));
+    else if(arr[i] == 2) {
+        ret = 1+solve(i+1, 0);
+        if(curr != 1)
+            ret = min(ret, solve(i+1, 1));
     }
-    return mem[i][last] = ans;
+    else if(arr[i] == 1) {
+        ret = 1+solve(i+1, 0);
+        if(curr != 2)
+            ret = min(ret, solve(i+1, 2));
+    }
+    else if(arr[i] == 0) {
+        ret = min(solve(i+1, 0), solve(i+1, 0))+1;
+    }
+
+    return ret;
 }
 
 int main()
 {
-    ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-    
     cin >> n;
     arr = vector<int>(n);
-    for(int &i : arr)
-        cin >> i;
-    memset(mem, -1, sizeof mem);
-    cout << n-solve(0, 0) << "\n";
+    for(int i = 0; i < n; i++)
+        cin >> arr[i];
+
+    memset(dp, -1, sizeof dp);
+
+    cout << solve(0, 0) << endl;
 
     return 0;
 }
