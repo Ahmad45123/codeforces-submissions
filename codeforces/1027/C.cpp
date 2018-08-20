@@ -11,24 +11,29 @@ int main()
     int t; cin >> t;
     while(t--) {
         int n; cin >> n;
-        vector<int> arr;
-        map<int, bool> passed;
+        map<int, int> passed;
         for(int i = 0; i < n; i++) {
             int temp; cin >> temp;
-            if(passed[temp]) {
-                arr.push_back(temp);
-                passed[temp] = false;
-                continue;
-            }
-            passed[temp] = true;
+            passed[temp] ++;
+        }
+
+        vector<int> arr;
+        for(auto it = passed.begin(); it != passed.end(); it++) {
+            if((*it).second >= 2)
+                arr.push_back((*it).first);
         }
         n = arr.size();
 
-        sort(arr.begin(), arr.end());
-
         double diff = DBL_MAX;
         int x, y;
-        for(int i = 1; i < n; i++) {
+        for(int i = 0; i < n; i++) {
+            if(passed[arr[i]] >= 4) {
+                x = y = arr[i];
+                break;
+            }
+
+            if(i == 0) continue;
+
             double tmp = arr[i]*1.0f / arr[i-1];
             if(tmp < diff) {
                 diff = tmp;
