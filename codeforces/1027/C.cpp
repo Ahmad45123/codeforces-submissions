@@ -1,25 +1,20 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+#define mp make_pair
+typedef long long int ll;
 
 int main()
 {
     ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
-
-   long long t;cin>>t;
-  // pair<string,int>l[100009];
-
-   long long a,b;
-  //  ios_base::sync_with_stdio(false);
-
-
-while(t--){
-   long long  n;cin>>n;
-      vector<long long >arr;
-      map<int, bool> passed;
+    int t; cin >> t;
+    while(t--) {
+        int n; cin >> n;
+        vector<int> arr;
+        map<int, bool> passed;
         for(int i = 0; i < n; i++) {
-            long long  temp; cin >> temp;
+            int temp; cin >> temp;
             if(passed[temp]) {
                 arr.push_back(temp);
                 passed[temp] = false;
@@ -27,19 +22,22 @@ while(t--){
             }
             passed[temp] = true;
         }
-        sort(arr.begin(),arr.end());
-      double  lol=999999;
- for(int i = 1; i < arr.size(); i++) {
-          double  rr=(arr[i]*1.0f/arr[i-1]);
-           if(rr<lol){lol=rr;
-           a=arr[i],b=arr[i-1];
-           }
+        n = arr.size();
 
+        sort(arr.begin(), arr.end());
+
+        double diff = DBL_MAX;
+        int x, y;
+        for(int i = 1; i < n; i++) {
+            double tmp = arr[i]*1.0f / arr[i-1];
+            if(tmp < diff) {
+                diff = tmp;
+                x = arr[i];
+                y = arr[i-1];
+            }
         }
 
-cout<<a<<" "<<a<<" "<<b<<" "<<b<<'\n';
-
-}
-
-
+        cout << x << " " << x << " " << y << " " << y << endl;
+    }
+    return 0;
 }
