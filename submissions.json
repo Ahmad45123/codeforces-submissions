@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF57847801": {
+    "contest_id": 709,
+    "language": "GNU C++17",
+    "path": "codeforces/709/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Juicer",
+    "problem_url": "https://codeforces.com/contest/709/problem/A",
+    "submission_id": "CF57847801",
+    "submission_url": "https://codeforces.com/contest/709/submission/57847801",
+    "tags": [
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Jul/27/2019 13:55"
+  },
   "CF58530601": {
     "contest_id": 1201,
     "language": "GNU C++17",
