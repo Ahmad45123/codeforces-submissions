@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF60813790": {
+    "contest_id": 79,
+    "language": "GNU C++17",
+    "path": "codeforces/79/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Bus Game",
+    "problem_url": "https://codeforces.com/contest/79/problem/A",
+    "submission_id": "CF60813790",
+    "submission_url": "https://codeforces.com/contest/79/submission/60813790",
+    "tags": [
+      "greedy",
+      "*1200"
+    ],
+    "timestamp": "Sep/18/2019 21:18"
+  },
   "CF60816413": {
     "contest_id": 236,
     "language": "GNU C++17",
