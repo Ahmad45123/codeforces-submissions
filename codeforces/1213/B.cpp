@@ -10,17 +10,23 @@ int main()
     int t; cin >> t;
     while(t--) {
         int n; cin >> n;
-        vector<int> arr(n);
+        vector<pair<int, int>> arr(n);
         for(int i = 0; i < n; i++) {
             int val; cin >> val;
-            arr[i] = val;
+            arr[i] = make_pair(val, i+1);
         }
+
+        sort(arr.begin(), arr.end());
+
         int ans = 0;
-        int mx = INT_MAX;
-        for(int i = n-1; i >= 0; i--) {
-            if(arr[i] > mx)
-                ans++;
-            mx = min(arr[i], mx);
+        int mx = 0;
+
+        for(int i = 0; i < n; i++) {
+            if(arr[i].second > mx)
+                mx = arr[i].second;
+            else {
+                ans ++;
+            }
         }
 
         cout << ans << "\n";
