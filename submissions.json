@@ -1558,6 +1558,24 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF69438787": {
+    "contest_id": 463,
+    "language": "GNU C++17",
+    "path": "codeforces/463/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Caisa and Pylons",
+    "problem_url": "https://codeforces.com/contest/463/problem/B",
+    "submission_id": "CF69438787",
+    "submission_url": "https://codeforces.com/contest/463/submission/69438787",
+    "tags": [
+      "brute force",
+      "implementation",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Jan/23/2020 22:16"
+  },
   "CF69440029": {
     "contest_id": 47,
     "language": "GNU C++17",
