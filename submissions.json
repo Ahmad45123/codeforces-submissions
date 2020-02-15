@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF71128804": {
+    "contest_id": 1304,
+    "language": "GNU C++17",
+    "path": "codeforces/1304/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Two Rabbits",
+    "problem_url": "https://codeforces.com/contest/1304/problem/A",
+    "submission_id": "CF71128804",
+    "submission_url": "https://codeforces.com/contest/1304/submission/71128804",
+    "tags": [
+      "math",
+      "*800"
+    ],
+    "timestamp": "Feb/15/2020 15:12"
+  },
   "CF71147665": {
     "contest_id": 1304,
     "language": "GNU C++17",
