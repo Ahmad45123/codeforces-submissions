@@ -2,8 +2,7 @@
 using namespace std;
 typedef long long ll;
 
-bool isGood(int a, int b, int ind) {
-    double y = (ind*(ind+1))/2;
+bool isGood(int a, int b, double y) {
     double x = (b+y-a)/(2*y);
     if(x > 1.0)
         return false;
@@ -19,6 +18,14 @@ int main()
 {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
     
+    vector<ll> sums;
+    sums.push_back(1);
+    ll cur = 2;
+    while(*(sums.end()-1) < 1e10) {
+        sums.push_back(*(sums.end()-1) + cur);
+        cur ++;
+    }
+    
     int t; cin >> t;
     while(t--) {
         int a, b; cin >> a >> b;
@@ -30,9 +37,9 @@ int main()
             swap(a, b);
 
         int good = -1;
-        for(int i = 1;; i++) {
-            if(isGood(a, b, i)) {
-                good = i;
+        for(int i = 0; i < sums.size(); i++) {
+            if(isGood(a, b, sums[i])) {
+                good = i+1;
                 break;
             }
         }
