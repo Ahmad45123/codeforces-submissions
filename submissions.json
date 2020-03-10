@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF72915780": {
+    "contest_id": 469,
+    "language": "GNU C++17",
+    "path": "codeforces/469/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Chat Online",
+    "problem_url": "https://codeforces.com/contest/469/problem/B",
+    "submission_id": "CF72915780",
+    "submission_url": "https://codeforces.com/contest/469/submission/72915780",
+    "tags": [
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Mar/10/2020 21:05"
+  },
   "CF72977268": {
     "contest_id": 1312,
     "language": "GNU C++17",
