@@ -21,13 +21,17 @@ int main()
     int a, b; cin >> a >> b;
 
     int maxr1 = *max_element(x.begin(), x.end());
+    int maxro1 = *max_element(y.begin(), y.end());
+    int minro2 = *min_element(z.begin(), z.end());
+    
+    cout << fixed << setprecision(6) << maxr1*sqrt((b*maxro1*1.0)/(b*maxro1*1.0+a*minro2*1.0)) << "\n";
 
-    double r2 = 0;
+    /*double r2 = 0;
     for(int i : y)
         for(int j : z) {
             r2 = max(r2, maxr1*sqrt((b*i*1.0)/(b*i*1.0+a*j*1.0)));
         }
     
-    cout << fixed << setprecision(6) << r2 << "\n";
+    cout << fixed << setprecision(6) << r2 << "\n";*/
     return 0;
 }
