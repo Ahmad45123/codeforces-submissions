@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF73606239": {
+    "contest_id": 148,
+    "language": "GNU C++17",
+    "path": "codeforces/148/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Escape",
+    "problem_url": "https://codeforces.com/contest/148/problem/B",
+    "submission_id": "CF73606239",
+    "submission_url": "https://codeforces.com/contest/148/submission/73606239",
+    "tags": [
+      "implementation",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Mar/18/2020 22:13"
+  },
   "CF73698156": {
     "contest_id": 1326,
     "language": "GNU C++17",
