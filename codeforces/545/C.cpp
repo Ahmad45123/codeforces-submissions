@@ -19,7 +19,9 @@ int solve(int i, int canDropBefore) {
 
     if(canDropBefore) {
         ans ++;
-    } else if(arr[i].second <= (arr[i+1].first - arr[i].first - 1)) {
+    }
+    
+    if(arr[i].second <= (arr[i+1].first - arr[i].first - 1)) {
         can = (arr[i+1].first - arr[i].first - 1)-arr[i].second >= arr[i+1].second;
         ans = max(ans, 1+solve(i+1, can));
     }
