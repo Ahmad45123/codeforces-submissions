@@ -1558,6 +1558,25 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF74374940": {
+    "contest_id": 1325,
+    "language": "GNU C++17",
+    "path": "codeforces/1325/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Ehab and Path-etic MEXs",
+    "problem_url": "https://codeforces.com/contest/1325/problem/C",
+    "submission_id": "CF74374940",
+    "submission_url": "https://codeforces.com/contest/1325/submission/74374940",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "greedy",
+      "trees",
+      "*1500"
+    ],
+    "timestamp": "Mar/26/2020 12:25"
+  },
   "CF74406477": {
     "contest_id": 1328,
     "language": "GNU C++17",
