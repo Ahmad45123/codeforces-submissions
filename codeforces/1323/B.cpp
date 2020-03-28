@@ -14,8 +14,8 @@ int main()
     for(int &i : arrB)
         cin >> i;
     
-    map<int, int> onesA;
-    map<int, int> onesB;
+    vector<ll> onesA(n+1, 0);
+    vector<ll> onesB(m+1, 0);
     int cur = 0;
     for(int i = 0; i < n; i++) {
         if(arrA[i] == 1)
@@ -31,6 +31,7 @@ int main()
         for(int j = 1; j <= cur; j++) {
             onesA[j] += cur-j+1;
         }
+
     cur = 0;
     for(int i = 0; i < m; i++) {
         if(arrB[i] == 1)
@@ -52,6 +53,7 @@ int main()
     for(int x = 1; x <= n; x++) {
         if(k % x == 0) {
             int y = k / x;
+            if(y > m) continue;
             ans += onesA[x]*onesB[y];
         }
     }
