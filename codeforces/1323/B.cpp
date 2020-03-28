@@ -14,8 +14,8 @@ int main()
     for(int &i : arrB)
         cin >> i;
     
-    map<int, ll> onesA;
-    map<int, ll> onesB;
+    map<int, int> onesA;
+    map<int, int> onesB;
     int cur = 0;
     for(int i = 0; i < n; i++) {
         if(arrA[i] == 1)
