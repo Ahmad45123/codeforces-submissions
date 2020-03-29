@@ -26,7 +26,7 @@ int main()
             b ++;
     }
 
-    for(int i = 1; i <= n; i++) {
+    for(int i = 1; i <= 1000; i++) {
         if(i*a > b) {
             cout << i << "\n";
             return 0;
