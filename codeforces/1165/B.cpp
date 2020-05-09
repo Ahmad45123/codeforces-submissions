@@ -13,8 +13,10 @@ int main() {
   int ans = 0;
   int cur = 1;
   for(int i = 0; i < n; i++) {
-    if(arr[i] >= ans+1)
+    if(arr[i] >= cur) {
       ans ++;
+      cur ++;
+    }
   }
   cout << ans;
 }
