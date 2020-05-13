@@ -1558,6 +1558,25 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF80011206": {
+    "contest_id": 1313,
+    "language": "GNU C++17",
+    "path": "codeforces/1313/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Different Rules",
+    "problem_url": "https://codeforces.com/contest/1313/problem/B",
+    "submission_id": "CF80011206",
+    "submission_url": "https://codeforces.com/contest/1313/submission/80011206",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "May/13/2020 20:34"
+  },
   "CF80100119": {
     "contest_id": 1353,
     "language": "GNU C++17",
