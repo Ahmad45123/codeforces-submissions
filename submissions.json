@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF80548298": {
+    "contest_id": 1355,
+    "language": "GNU C++17",
+    "path": "codeforces/1355/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Game With Array",
+    "problem_url": "https://codeforces.com/contest/1355/problem/D",
+    "submission_id": "CF80548298",
+    "submission_url": "https://codeforces.com/contest/1355/submission/80548298",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "*1400"
+    ],
+    "timestamp": "May/17/2020 20:53"
+  },
   "CF80648463": {
     "contest_id": 1354,
     "language": "GNU C++17",
