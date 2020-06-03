@@ -9,11 +9,12 @@ int main()
     
     int n; cin >> n;
     vector<int> arr(n);
-    int mn = 1e9, mx = -1e9;
+    int mn = 1e9, mx = -1e9, av = 0;
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
         mn = min(mn, arr[i]);
         mx = max(mx, arr[i]);
+        av = (mn+mx)/2;
     }
     if(abs(mx-mn) <= 1) {
         cout << n << "\n";
@@ -32,38 +33,29 @@ int main()
             else
                 nMid ++;
 
-        int half = nMid/2;
-        if(half > min(nMin, nMax)) {
+        int tmp1 = nMid/2;
+        int tmp2 = min(nMin, nMax);
 
-            cout << n-2*half << "\n";
-            nMin = nMax = half;
-            for(int i = 0; i < n; i++) {
-                if(arr[i] == mn+1 && nMin > 0) {
-                    cout << arr[i]-1 << " ";
-                    nMin --;
-                } else if(arr[i] == mn+1 && nMax > 0) {
-                    cout << arr[i]+1 << " ";
-                    nMax --;
-                } else {
-                    cout << arr[i] << " ";
-                }
-            }
-
+        if(tmp1 > tmp2) {  
+            cout << n-2*tmp1 << "\n";
+            nMin += tmp1;
+            nMax += tmp1;
+            nMid -= tmp1*2;
         } else {
-            cout << n-2*min(nMin, nMax) << "\n";
-            nMin = nMax = min(nMin, nMax);
-            for(int i = 0; i < n; i++) {
-                if(arr[i] == mn && nMin > 0) {
-                    cout << arr[i]+1 << " ";
-                    nMin --;
-                } else if(arr[i] == mx && nMax > 0) {
-                    cout << arr[i]-1 << " ";
-                    nMax --;
-                } else {
-                    cout << arr[i] << " ";
-                }
-            }
+            cout << n-2*tmp2 << "\n";
+            nMin -= tmp2;
+            nMax -= tmp2;
+            nMid += tmp2*2;
         }
+
+        for(int i = 0; i < nMin; i++)
+            cout << mn << " ";
+        for(int i = 0; i < nMax; i++)
+            cout << mx << " ";
+        for(int i = 0; i < nMid; i++)
+            cout << av << " ";
+        cout << "\n";
+
     }
     return 0;
 }
