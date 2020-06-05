@@ -16,6 +16,20 @@ int main()
             graph[u].push_back(v);
             graph[v].push_back(u);
         }
+
+        vector<bool> vis(n+1);
+        queue<pair<int, int>> q;
+        q.push({x, 0});
+        while(!q.empty()) {
+            auto cur = q.front();
+            q.pop();
+            vis[cur.first] = true;
+            for(int i = 0; i < graph[cur.first].size(); i++) {
+                if(!vis[graph[cur.first][i]]) {
+                    q.push({graph[cur.first][i], cur.second+1});
+                }
+            }
+        }
         
         cout << (graph[x].size() <= 1 || n % 2 == 0 ? "Ayush" : "Ashish") << "\n";
     }
