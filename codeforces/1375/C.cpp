@@ -24,7 +24,7 @@ int main()
             /*} else if(arr[i] == 1 && i == 1) {
                 cout << "YES\n";
                 break;*/
-            } else if(arr[i] == 1) {
+            } else if(arr[i] == 1 && i != 1) {
                 cout << "NO\n";
                 break;
             }
