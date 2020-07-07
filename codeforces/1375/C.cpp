@@ -17,18 +17,21 @@ int main()
             arr[x] = i;
         }
 
+        bool bad = true;
         for(int i = n; i >= 1; i--) {
             if(arr[i] == n) {
-                cout << "YES\n";
+                bad = false;
                 break;
-            /*} else if(arr[i] == 1 && i == 1) {
-                cout << "YES\n";
-                break;*/
+            } else if(arr[i] == 1 && i == 1) {
+                bad = false;
+                break;
             } else if(arr[i] == 1 && i != 1) {
-                cout << "NO\n";
+                bad = true;
                 break;
             }
         }
+
+        cout << (bad ? "NO\n" : "YES\n");
     }
     
     
