@@ -14,7 +14,7 @@ int main()
     
     reverse(arr.begin(), arr.end());
 
-    unordered_map<string, bool> vis;
+    map<string, bool> vis;
     for(int i = 0; i < n; i++) {
         if(!vis[arr[i]]) {
             cout << arr[i] << '\n';
