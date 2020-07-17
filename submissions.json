@@ -1558,6 +1558,22 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF87105149": {
+    "contest_id": 1385,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1385/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Make It Good",
+    "problem_url": "https://codeforces.com/contest/1385/problem/C",
+    "submission_id": "CF87105149",
+    "submission_url": "https://codeforces.com/contest/1385/submission/87105149",
+    "tags": [
+      "greedy",
+      "*1200"
+    ],
+    "timestamp": "Jul/17/2020 17:02"
+  },
   "CF87119176": {
     "contest_id": 1385,
     "language": "GNU C++17 (64)",
