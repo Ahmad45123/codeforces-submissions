@@ -1558,6 +1558,25 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF87346264": {
+    "contest_id": 1379,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1379/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Dubious Cyrpto",
+    "problem_url": "https://codeforces.com/contest/1379/problem/B",
+    "submission_id": "CF87346264",
+    "submission_url": "https://codeforces.com/contest/1379/submission/87346264",
+    "tags": [
+      "binary search",
+      "brute force",
+      "math",
+      "number theory",
+      "*1500"
+    ],
+    "timestamp": "Jul/19/2020 13:46"
+  },
   "CF87460095": {
     "contest_id": 56,
     "language": "GNU C++17 (64)",
