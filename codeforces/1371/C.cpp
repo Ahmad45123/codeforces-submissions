@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 typedef long long ll;
-
+ 
 int main()
 {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
@@ -15,7 +15,7 @@ int main()
         } else {
             ll mx = max(a, b);
             ll mn = min(a, b);
-            if(m <= mn && n <= (mx+mn-m))
+            if(m <= mn)
                 cout << "Yes\n";
             else
                 cout << "No\n";
