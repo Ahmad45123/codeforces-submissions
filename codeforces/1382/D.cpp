@@ -31,19 +31,17 @@ int main()
         sums.clear();
         dp = vector<vector<short>>(2*n+1, vector<short>(n+1, -1));
         arr = vector<int>(2*n);
-        for(int i = 0; i < 2*n; i++)
+        int positions[4002];
+        for(int i = 0; i < 2*n; i++) {
             cin >> arr[i];
+            positions[arr[i]] = i+1;
+        }
         
-        int nxt = 2*n;
-        int prev = 2*n;
-        bool passed[4002]; memset(passed, false, sizeof passed);
-        for(int i = 2*n-1; i >= 0; i--) {
-            passed[arr[i]] = true;
-            if(arr[i] == nxt) {
-                sums.push_back(prev-i);
-                prev = i;
-                while(passed[nxt])
-                    nxt --;
+        int prev = 2*n+1;
+        for(int i = 2*n; i > 0; i--) {
+            if(positions[i] <= prev) {
+                sums.push_back(prev-positions[i]);
+                prev = positions[i];
             }
         }
 
