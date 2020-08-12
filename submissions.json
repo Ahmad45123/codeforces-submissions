@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF89728376": {
+    "contest_id": 1388,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1388/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Captain Flint and a Long Voyage",
+    "problem_url": "https://codeforces.com/contest/1388/problem/B",
+    "submission_id": "CF89728376",
+    "submission_url": "https://codeforces.com/contest/1388/submission/89728376",
+    "tags": [
+      "greedy",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Aug/12/2020 19:05"
+  },
   "CF89923645": {
     "contest_id": 1388,
     "language": "GNU C++17 (64)",
