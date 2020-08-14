@@ -26,7 +26,7 @@ int countEntries(int i) {
         bad = true;
     }
     good[i] = (total+happy[i])/2;
-    if(good[i] > total) {
+    if(good[i] < 0 || good[i] > total) {
         bad = true;
     }
 
