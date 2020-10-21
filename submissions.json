@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF96311664": {
+    "contest_id": 1206,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1206/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Shortest Cycle",
+    "problem_url": "https://codeforces.com/contest/1206/problem/D",
+    "submission_id": "CF96311664",
+    "submission_url": "https://codeforces.com/contest/1206/submission/96311664",
+    "tags": [
+      "bitmasks",
+      "graphs",
+      "*1900"
+    ],
+    "timestamp": "Oct/21/2020 22:18"
+  },
   "CF96349798": {
     "contest_id": 1423,
     "language": "GNU C++17 (64)",
