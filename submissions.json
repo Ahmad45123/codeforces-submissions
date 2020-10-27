@@ -1558,6 +1558,23 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF96928888": {
+    "contest_id": 1433,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1433/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Boring Apartments",
+    "problem_url": "https://codeforces.com/contest/1433/problem/A",
+    "submission_id": "CF96928888",
+    "submission_url": "https://codeforces.com/contest/1433/submission/96928888",
+    "tags": [
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Oct/27/2020 19:04"
+  },
   "CF96929538": {
     "contest_id": 1433,
     "language": "GNU C++17 (64)",
