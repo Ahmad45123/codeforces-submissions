@@ -1558,6 +1558,25 @@
     ],
     "timestamp": "Jan/11/2021 16:29"
   },
+  "CF97241239": {
+    "contest_id": 1325,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1325/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Ehab the Xorcist",
+    "problem_url": "https://codeforces.com/contest/1325/problem/D",
+    "submission_id": "CF97241239",
+    "submission_url": "https://codeforces.com/contest/1325/submission/97241239",
+    "tags": [
+      "bitmasks",
+      "constructive algorithms",
+      "greedy",
+      "number theory",
+      "*1700"
+    ],
+    "timestamp": "Oct/31/2020 13:41"
+  },
   "CF97258507": {
     "contest_id": 1430,
     "language": "GNU C++17 (64)",
