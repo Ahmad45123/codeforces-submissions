@@ -1,0 +1,3 @@
+        program ahmed
+        Print *,"FORTRAN 77"
+        end program

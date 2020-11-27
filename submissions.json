@@ -1557,5 +1557,21 @@
       "*1700"
     ],
     "timestamp": "Jan/11/2021 16:29"
+  },
+  "CF99713751": {
+    "contest_id": 409,
+    "language": "Mysterious Language",
+    "path": "codeforces/409/B.txt",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Mysterious Language",
+    "problem_url": "https://codeforces.com/contest/409/problem/B",
+    "submission_id": "CF99713751",
+    "submission_url": "https://codeforces.com/contest/409/submission/99713751",
+    "tags": [
+      "*special problem",
+      "*1700"
+    ],
+    "timestamp": "Nov/27/2020 14:21"
   }
 }
