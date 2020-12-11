@@ -1,4 +1,21 @@
 {
+  "CF100905297": {
+    "contest_id": 1265,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1265/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Beautiful String",
+    "problem_url": "https://codeforces.com/contest/1265/problem/A",
+    "submission_id": "CF100905297",
+    "submission_url": "https://codeforces.com/contest/1265/submission/100905297",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*1000"
+    ],
+    "timestamp": "Dec/11/2020 15:20"
+  },
   "CF101010378": {
     "contest_id": 1265,
     "language": "GNU C++17 (64)",
