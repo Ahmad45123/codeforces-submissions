@@ -1,4 +1,21 @@
 {
+  "CF101018581": {
+    "contest_id": 1265,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1265/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Beautiful Regional Contest",
+    "problem_url": "https://codeforces.com/contest/1265/problem/C",
+    "submission_id": "CF101018581",
+    "submission_url": "https://codeforces.com/contest/1265/submission/101018581",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Dec/12/2020 14:24"
+  },
   "CF101092435": {
     "contest_id": 1265,
     "language": "GNU C++17 (64)",
