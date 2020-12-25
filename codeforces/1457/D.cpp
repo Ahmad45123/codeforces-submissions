@@ -88,8 +88,13 @@ int main()
     seg.init(n);
     seg.build(arr);
 
+    ll b[n + 5];
+    for (ll i = 0; i < n; i++) {
+        b[i] = 30 -__builtin_clz(arr[i]);
+    }
+
     for (ll i = 0; i < n - 3; i++) {
-        if (__builtin_clz(arr[i]) == __builtin_clz(arr[i + 1]) && __builtin_clz(arr[i + 1]) == __builtin_clz(arr[i + 2])) {
+        if (b[i] == b[i + 1] && b[i + 1] == b[i + 2]) {
             cout << "1\n";
             return 0;
         }
