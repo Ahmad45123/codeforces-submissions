@@ -76,6 +76,17 @@ struct segtree {
     }
 };
 
+ll msb(ll n)
+{
+    ll ct = 0;
+    while (n > 0)
+    {
+        n = n / 2;
+        ct++;
+    }
+    return ct;
+}
+
 int main()
 {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
@@ -90,7 +101,7 @@ int main()
 
     ll b[n + 5];
     for (ll i = 0; i < n; i++) {
-        b[i] = 30 -__builtin_clz(arr[i]);
+        b[i] = msb(arr[i]);
     }
 
     for (ll i = 0; i < n - 3; i++) {
