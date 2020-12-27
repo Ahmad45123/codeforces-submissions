@@ -14,22 +14,47 @@ int main()
         for(int &x : arr)
             cin >> x;
         
-        int oddCount = 0;
-        for(int x : arr)
-            if(x % 2 != 0)
-                oddCount ++;
-        
-        if(oddCount >= k && oddCount % 2 == k % 2) {
-            cout << "YES\n";
-            for(int i = 0, p = 0; i < n && p < k-1; i++) {
-                if(arr[i] % 2 != 0) {
-                    cout << i+1 << " ";
-                    p ++;
-                }
+        vector<int> lenses;
+        int tmp = 0;
+        for(int i = 0; i < n; i++) {
+            tmp ++;
+            if(arr[i] % 2 != 0) {
+                lenses.push_back(tmp);
+                tmp = 0;
             }
-            cout << n << "\n";
-        } else {
+        }
+        if(lenses.size() > 0) lenses[lenses.size()-1] += tmp;
+
+        if(lenses.size() < k) {
             cout << "NO\n";
+            continue;
+        } else if(lenses.size() == k) {
+            cout << "YES\n";
+            cout << lenses[0] << " ";
+            for(int i = 1; i < lenses.size(); i++) {
+                lenses[i] += lenses[i-1];
+                cout << lenses[i] << " ";
+            }
+            cout << "\n";
+        } else {
+            while(lenses.size() > k) {
+                if(lenses.size() < 3)
+                    break;
+                
+                lenses[lenses.size()-3] += lenses[lenses.size()-1] + lenses[lenses.size()-2];
+                lenses.pop_back();
+                lenses.pop_back();
+            }
+            if(lenses.size() == k) {
+                cout << "YES\n";
+                cout << lenses[0] << " ";
+                for(int i = 1; i < lenses.size(); i++) {
+                    lenses[i] += lenses[i-1];
+                    cout << lenses[i] << " ";
+                }
+                cout << "\n";
+            } else
+                cout << "NO\n";
         }
     }
     
