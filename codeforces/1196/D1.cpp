@@ -3,37 +3,6 @@ using namespace std;
 
 typedef long long ll;
 
-int solve(int j, int &k, vector<short> &arr) {
-    int ansR = (arr[j] != 0);
-    int exp = 1;
-    for(int i = j+1; i < j+k; i++) {
-        if(arr[i] != exp)
-            ansR ++;
-        exp++;
-        exp %= 3;
-    }
-    
-    int ansG = (arr[j] != 1);
-    exp = 2;
-    for(int i = j+1; i < j+k; i++) {
-        if(arr[i] != exp)
-            ansG ++;
-        exp++;
-        exp %= 3;
-    }
-    
-    int ansB = (arr[j] != 2);
-    exp = 0;
-    for(int i = j+1; i < j+k; i++) {
-        if(arr[i] != exp)
-            ansB ++;
-        exp++;
-        exp %= 3;
-    }
-
-    return min({ansR, ansG, ansB});
-}
-
 int main()
 {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
@@ -52,10 +21,55 @@ int main()
                 arr.push_back(2);
         }
         
-        int ans = n;
-        for(int i = 0; i <= n-k; i++)
-            ans = min(ans, solve(i, k, arr));
+        vector<short> A;
+        vector<short> B;
+        vector<short> C;
+        A.push_back(0);
+        B.push_back(1);
+        C.push_back(2);
+        for(int i = 1; i < n; i++) {
+            A.push_back((A[A.size()-1]+1)%3);
+            B.push_back((B[B.size()-1]+1)%3);
+            C.push_back((C[C.size()-1]+1)%3);
+        }
+        int ansA = 0;
+        int ansB = 0;
+        int ansC = 0;
+        for(int i = 0; i < k; i++) {
+            if(arr[i] != A[i]) {
+                ansA++;
+            }
+            if(arr[i] != B[i]) {
+                ansB++;
+            }
+            if(arr[i] != C[i]) {
+                ansC++;
+            }
+        }
+        int ans = min({ansA, ansB, ansC});
+        for(int i = k; i < n; i++) {
+            if(arr[i-k] != A[i-k]) {
+                ansA--;
+            }
+            if(arr[i-k] != B[i-k]) {
+                ansB--;
+            }
+            if(arr[i-k] != C[i-k]) {
+                ansC--;
+            }
 
+            if(arr[i] != A[i]) {
+                ansA++;
+            }
+            if(arr[i] != B[i]) {
+                ansB++;
+            }
+            if(arr[i] != C[i]) {
+                ansC++;
+            }
+            ans = min({ans, ansA, ansB, ansC});
+        }
+        
         cout << ans << "\n";
     }
     
