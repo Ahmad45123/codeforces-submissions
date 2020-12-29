@@ -10,7 +10,14 @@ int main()
     int t; cin >> t;
     while(t--) {
         string s; cin >> s;
-        cout << (s.size() % 2 != 0 || s[0] == ')' || s[s.size()-1] == '(' ? "NO\n" : "YES\n");
+        
+        int cnt = 0;
+        for(int i = 0; i < s.size(); i++) {
+            if(s[i] == '?')
+                cnt ++;
+        }
+    
+        cout << (cnt % 2 != 0 || s[0] == ')' || s[s.size()-1] == '(' ? "NO\n" : "YES\n");
     }
     
     return 0;
