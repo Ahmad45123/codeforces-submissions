@@ -3,6 +3,13 @@ using namespace std;
 
 typedef long long ll;
 
+bool comp(pair<int, int> a, pair<int, int> b) {
+    if(a.first == b.first) {
+        return a.second > b.second;
+    }
+    return a.first < b.first;
+}
+
 int main()
 {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
@@ -30,7 +37,7 @@ int main()
             }
         }
 
-        sort(q.begin(), q.end());
+        sort(q.begin(), q.end(), comp);
 
         cout << ans << " ";
         for(int i = 0; i < n-2; i++) {
