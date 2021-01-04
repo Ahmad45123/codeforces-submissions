@@ -12,13 +12,16 @@ int main()
     {
         int w, h, n; cin >> w >> h >> n;
         ll pwr = 0;
-        while(w % 2 == 0) {
-            pwr ++;
-            w /= 2;
-        }
-        while(h % 2 == 0) {
-            pwr ++;
-            h /= 2;
+        while(w % 2 == 0 || h % 2 == 0) {
+            if(w % 2 == 0) {
+                pwr ++;
+                w /= 2;
+            } else if(h % 2 == 0) {
+                pwr ++;
+                h /= 2;
+            } else {
+                break;
+            }
         }
         if((1LL << pwr) >= n)
             cout << "YES\n";
