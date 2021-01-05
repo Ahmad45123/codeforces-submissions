@@ -10,20 +10,32 @@ int main()
     int t; cin >> t;
     while(t--) {
         int n, x; cin >> n >> x;
-        vector<pair<ll, ll>> arr(n);
-        for(auto &x : arr)
-            cin >> x.first, x.second = 1;
+        vector<int> arr(n);
+        for(int &x : arr)
+            cin >> x;
 
-        for(int i = 0;; i ++) {
-            if(arr[i].first % x != 0)
-                break;
-            arr.push_back({arr[i].first / x, x*arr[i].second});
-        }
-
+        vector<int> flag(n, 0);
         ll sum = 0;
-        for(auto x : arr)
-            sum += x.first * x.second;
-        
+        for(int i = 0; i < n; i++) {
+            int cnt = 0;
+            int tmp = arr[i];
+            sum += arr[i];
+            while(tmp % x == 0) {
+                tmp /= x;
+                cnt ++;
+            }
+            flag[i] = cnt;
+        }
+        ll mn = *min_element(flag.begin(), flag.end());
+        for(int i = 0; i < n; i++)
+            sum += mn*arr[i];
+        for(int i = 0; i < n; i++) {
+            if(flag[i] == mn) {
+                break;
+            }
+            sum += arr[i];
+        }
+         
         cout << sum << "\n";
     }
     
